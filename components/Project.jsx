@@ -12,7 +12,7 @@ const Project = () => {
         <h2 className='py-4'>What I have build</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem title="Cinema Online" bgImg={CinemaOnline} tech="React JS, Node JS, Express JS, Bootstrap, MySQL" projectUrl='/project/cinema'/>
-          <ProjectItem title="Cash Management (Static)" bgImg={CashManagement} tech={"Nextt JS, Typescript, Tailwind"} projectUrl="/project/cashmanagement"/>
+          <ProjectItem title="Cash Management (Static)" bgImg={CashManagement} tech={"Next JS, Typescript, Tailwind"} projectUrl="/project/cashmanagement"/>
         </div>
       </div>
     </div>
