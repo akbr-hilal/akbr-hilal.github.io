@@ -48,7 +48,7 @@ const Skill = () => {
             <SkillItems img={Java} title="Java" height={"64px"} width={"64px"} url={"www.java.com/en/"} />
 
             {/* TypeScript */}
-            <SkillItems img={Typescript} title="Java" height={"64px"} width={"64px"} url={"www.java.com/en/"} />
+            <SkillItems img={Typescript} title="Typescript" height={"64px"} width={"64px"} url={"typescriptlang.org/"} />
 
             {/* Tailwind */}
             <SkillItems img={Tailwind} title="Tailwind" height={"64px"} width={"64px"} url={"tailwindcss.com"} />
