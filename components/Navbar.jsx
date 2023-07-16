@@ -14,38 +14,42 @@ const Navbar = () => {
 
   const router = useRouter()
 
-  useEffect(() => {
-    if (
-      router.asPath === '/cinema'
-    ) {
-      setNavBg('transparent')
-      setLinkColor('#ecf0f3')
-    } else {
-      setNavBg('#ecf0f3')
-      setLinkColor('#1f2937')
-    }
-  }, [router])
-
   const handleNav = () => {
     setNav(!nav)
   }
 
   const handleShadow = () => {
-    if(window.scrollY >= 90) {
+    if (window.scrollY >= 90) {
       setShadow(true)
+      if (router.asPath !== '/') {
+        // setNavBg('transparent')
+        // setLinkColor('#ecf0f3')
+        setNavBg('#ecf0f3')
+        setLinkColor('#1f2937')
+      } else {
+        setNavBg('#ecf0f3')
+        setLinkColor('#1f2937')
+      }
     } else {
-      setShadow(false)
+      setShadow(false);
+      if (router.asPath !== '/') {
+        setNavBg('transparent')
+        setLinkColor('#ecf0f3')
+      } else {
+        setNavBg('#ecf0f3')
+        setLinkColor('#1f2937')
+      }
     }
   }
 
   useEffect(() => {
     window.addEventListener('scroll', handleShadow)
-  },[])
+  }, [router])
   return (
     <div style={{ backgroundColor: `${navBg}` }} className={shadow ? "fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3]" : "fixed w-full h-20 z-[100]"}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
-          <Image src={Logo} alt="Logo Hilal Akbar" width="80" height="60" className='cursor-pointer'/>
+          <Image src={Logo} alt="Logo Hilal Akbar" width="80" height="60" className='cursor-pointer' />
         </Link>
         <div>
           <ul className='hidden md:flex' style={{ color: `${linkColor}` }}>
@@ -66,7 +70,7 @@ const Navbar = () => {
             </Link>
           </ul>
           <div className='md:hidden cursor-pointer' onClick={handleNav}>
-            <Icon icon="bx:menu-alt-right" width="32"/>
+            <Icon icon="bx:menu-alt-right" width="32" color={linkColor}/>
           </div>
         </div>
       </div>
@@ -106,22 +110,22 @@ const Navbar = () => {
               <p className="uppercase tracking-widest text-[#5651e5]">Les&#39;t Connect</p>
               <div className='flex mt-2 items-center justify-between'>
                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
-                  <a href="https://www.linkedin.com/in/hilal-akbar/"  target="_blank" rel="noreferrer">
+                  <a href="https://www.linkedin.com/in/hilal-akbar/" target="_blank" rel="noreferrer">
                     <Icon icon="fa:linkedin" width="20" />
                   </a>
                 </div>
                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
-                  <a href="https://github.com/akbr-hilal/"  target="_blank" rel="noreferrer">
+                  <a href="https://github.com/akbr-hilal/" target="_blank" rel="noreferrer">
                     <Icon icon="fa:github" width="20" />
                   </a>
                 </div>
                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
-                  <a href="https://www.tiktok.com/@akbr_hilal/"  target="_blank" rel="noreferrer">
+                  <a href="https://www.tiktok.com/@akbr_hilal/" target="_blank" rel="noreferrer">
                     <Icon icon="fa-brands:tiktok" width="19" />
                   </a>
                 </div>
                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
-                  <a href="https://www.instagram.com/akbr_hilal/"  target="_blank" rel="noreferrer">
+                  <a href="https://www.instagram.com/akbr_hilal/" target="_blank" rel="noreferrer">
                     <Icon icon="fa:instagram" width="22" />
                   </a>
                 </div>

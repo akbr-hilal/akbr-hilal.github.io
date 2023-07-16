@@ -2,6 +2,7 @@ import React from 'react'
 import ProjectItem from './Items/ProjectItem'
 
 import CinemaOnline from '../public/assets/projects/cinema-online.png'
+import CashManagement from '../public/assets/projects/cash-management.png'
 
 const Project = () => {
   return (
@@ -10,8 +11,8 @@ const Project = () => {
         <p className='uppercase text-[#071695] text-xl tracking-widest'>projects</p>
         <h2 className='py-4'>What I have build</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <ProjectItem title="Cinema Online" bgImg={CinemaOnline} tech="React JS, Node JS, Express JS, Bootstrap, MySQL" projectUrl='/cinema'/>
-          {/* <ProjectItem title="Data Employee" bgImg="" tech={"React JS, Java, MySQL"} projectUrl=""/> */}
+          <ProjectItem title="Cinema Online" bgImg={CinemaOnline} tech="React JS, Node JS, Express JS, Bootstrap, MySQL" projectUrl='/project/cinema'/>
+          <ProjectItem title="Cash Management (Static)" bgImg={CashManagement} tech={"Nextt JS, Typescript, Tailwind"} projectUrl="/project/cashmanagement"/>
         </div>
       </div>
     </div>
