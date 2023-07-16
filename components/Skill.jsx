@@ -8,6 +8,7 @@ import SkillItems from './Items/SkillItems'
 import HTML from '../public/assets/skills/html.png'
 import CSS from '../public/assets/skills/css.png'
 import Javascript from '../public/assets/skills/javascript.png'
+import Typescript from '../public/assets/skills/typescript.png'
 import Tailwind from '../public/assets/skills/tailwind.png'
 import Bootstrap from '../public/assets/skills/bootstrap.png'
 import ReactJS from '../public/assets/skills/react.png'
@@ -38,13 +39,16 @@ const Skill = () => {
             <SkillItems img={HTML} title="HTML" height={"64px"} width={"64px"} url={"developer.mozilla.org/en-US/docs/Web/HTML"} />
 
             {/* CSS */}
-            <SkillItems img={CSS} title="CSS" height={"64px"} width={"64px"} url={"developer.mozilla.org/en-US/docs/Web/CSS"}/>
+            <SkillItems img={CSS} title="CSS" height={"64px"} width={"64px"} url={"developer.mozilla.org/en-US/docs/Web/CSS"} />
 
             {/* JS */}
             <SkillItems img={Javascript} title="Javascript" height={"64px"} width={"64px"} url={"developer.mozilla.org/en-US/docs/Web/javascript"} />
 
             {/* Java */}
             <SkillItems img={Java} title="Java" height={"64px"} width={"64px"} url={"www.java.com/en/"} />
+
+            {/* TypeScript */}
+            <SkillItems img={Typescript} title="Java" height={"64px"} width={"64px"} url={"www.java.com/en/"} />
 
             {/* Tailwind */}
             <SkillItems img={Tailwind} title="Tailwind" height={"64px"} width={"64px"} url={"tailwindcss.com"} />
@@ -60,12 +64,12 @@ const Skill = () => {
 
             {/* Express */}
             <SkillItems img={ExpressJS} title="Express JS" height={"64px"} width={"64px"} url={"expressjs.com"} />
-            
+
             {/* Node */}
             <SkillItems img={NodeJS} title="Node JS" height={"64px"} width={"64px"} url={"nodejs.org"} />
 
-             {/* Spring */}
-             <SkillItems img={Spring} title="Java Spring" height={"64px"} width={"64px"} url={"spring.io"} />
+            {/* Spring */}
+            <SkillItems img={Spring} title="Java Spring" height={"64px"} width={"64px"} url={"spring.io"} />
           </div>
         </div>
 
@@ -82,7 +86,7 @@ const Skill = () => {
               {/* PostgreSQL */}
               <SkillItems img={PostgreSQL} title="PostgreSQL" height={"64px"} width={"64px"} url={"www.postgresql.org"} />
 
-              
+
               {/* OracleSQl */}
               <SkillItems img={OracleSQL} title="Oracle SQL" height={"64px"} width={"64px"} url={"www.oracle.com/database"} />
             </div>
@@ -94,7 +98,7 @@ const Skill = () => {
 
               {/* Git */}
               <SkillItems img={Git} title="Git" height={"64px"} width={"64px"} url={"git-scm.com"} />
-              
+
               {/* Github */}
               <SkillItems img={Github} title="Github" height={"64px"} width={"64px"} url={"github.com"} />
             </div>
